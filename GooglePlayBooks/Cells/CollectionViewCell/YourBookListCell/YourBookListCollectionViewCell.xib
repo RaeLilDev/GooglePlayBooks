@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YourBookListCollectionViewCell" customModule="GooglePlayBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TEe-Xp-BEy">
+                        <rect key="frame" x="0.0" y="8" width="456" height="115"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_book_cover" translatesAutoresizingMaskIntoConstraints="NO" id="QGv-mF-TlC">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="mpC-q7-hve"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-gm-256">
+                                <rect key="frame" x="92" y="0.0" width="272" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never Send A Human To Do Machine's Job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82C-NO-J7l">
+                                        <rect key="frame" x="0.0" y="2" width="272" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julie Zhuo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICQ-6c-N1G">
+                                        <rect key="frame" x="0.0" y="53" width="272" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ebook - Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF7-ap-EiV">
+                                        <rect key="frame" x="0.0" y="74" width="272" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vF7-ap-EiV" secondAttribute="trailing" id="48j-c1-bJF"/>
+                                    <constraint firstAttribute="trailing" secondItem="82C-NO-J7l" secondAttribute="trailing" id="9dI-YC-xdI"/>
+                                    <constraint firstItem="82C-NO-J7l" firstAttribute="top" secondItem="vF5-gm-256" secondAttribute="top" constant="2" id="DDV-1O-xdH"/>
+                                    <constraint firstItem="vF7-ap-EiV" firstAttribute="top" secondItem="ICQ-6c-N1G" secondAttribute="bottom" constant="4" id="Db9-ee-HH1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ICQ-6c-N1G" secondAttribute="trailing" id="La5-vw-7qh"/>
+                                    <constraint firstItem="ICQ-6c-N1G" firstAttribute="leading" secondItem="vF5-gm-256" secondAttribute="leading" id="OU9-R4-eZr"/>
+                                    <constraint firstItem="vF7-ap-EiV" firstAttribute="leading" secondItem="vF5-gm-256" secondAttribute="leading" id="TSk-b7-MNk"/>
+                                    <constraint firstItem="82C-NO-J7l" firstAttribute="leading" secondItem="vF5-gm-256" secondAttribute="leading" id="tH4-x2-2jL"/>
+                                    <constraint firstItem="ICQ-6c-N1G" firstAttribute="top" secondItem="82C-NO-J7l" secondAttribute="bottom" constant="8" id="zFC-sf-RFb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-bX-cLi">
+                                <rect key="frame" x="376" y="0.0" width="80" height="115"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-hX-T2S">
+                                        <rect key="frame" x="8" y="6" width="20" height="20"/>
+                                        <color key="tintColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YWw-oZ-2im"/>
+                                            <constraint firstAttribute="width" constant="20" id="tkI-uF-I5d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_dark_gray" translatesAutoresizingMaskIntoConstraints="NO" id="wfe-Xe-qDF">
+                                        <rect key="frame" x="60" y="6" width="20" height="20"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="LAu-1N-HAk"/>
+                                            <constraint firstAttribute="width" constant="20" id="d1F-DY-KoU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="BZc-hX-T2S" firstAttribute="leading" secondItem="wjZ-bX-cLi" secondAttribute="leading" constant="8" id="Gr4-ki-RrF"/>
+                                    <constraint firstItem="wfe-Xe-qDF" firstAttribute="top" secondItem="wjZ-bX-cLi" secondAttribute="top" constant="6" id="JZJ-bx-2OS"/>
+                                    <constraint firstAttribute="width" constant="80" id="hxM-PJ-WV1"/>
+                                    <constraint firstAttribute="trailing" secondItem="wfe-Xe-qDF" secondAttribute="trailing" id="r4X-Bd-f14"/>
+                                    <constraint firstItem="BZc-hX-T2S" firstAttribute="top" secondItem="wjZ-bX-cLi" secondAttribute="top" constant="6" id="v16-D7-aMc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TEe-Xp-BEy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="E42-Y3-WJo"/>
+                <constraint firstItem="TEe-Xp-BEy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KNd-Ng-w80"/>
+                <constraint firstAttribute="trailing" secondItem="TEe-Xp-BEy" secondAttribute="trailing" id="fGh-sX-7Hj"/>
+                <constraint firstAttribute="bottom" secondItem="TEe-Xp-BEy" secondAttribute="bottom" constant="8" id="pDi-rs-0zl"/>
+            </constraints>
+            <size key="customSize" width="456" height="125"/>
+            <connections>
+                <outlet property="ivBookImage" destination="QGv-mF-TlC" id="OsE-K9-rVG"/>
+                <outlet property="ivMoreInfo" destination="wfe-Xe-qDF" id="jbU-rB-Zcz"/>
+                <outlet property="lblAuthor" destination="ICQ-6c-N1G" id="D1z-FW-31k"/>
+                <outlet property="lblBookName" destination="82C-NO-J7l" id="uDQ-kj-sfb"/>
+            </connections>
+            <point key="canvasLocation" x="521.73913043478262" y="200.55803571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_book_cover" width="135.33332824707031" height="166.66667175292969"/>
+        <image name="menu_dark_gray" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

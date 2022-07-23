@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="CategorySelectionTableViewCell" customModule="GooglePlayBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6va-Aj-K7h">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="69"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YI9-3a-uhT">
+                                <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-o5-R9U">
+                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EBooks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kie-aT-J5P">
+                                                <rect key="frame" x="65" y="14.5" width="55.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="colorPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERT-oO-Kav">
+                                                <rect key="frame" x="69" y="44" width="48" height="4"/>
+                                                <color key="backgroundColor" name="colorPrimary"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="7d0-gM-vyX"/>
+                                                    <constraint firstAttribute="height" constant="4" id="har-4h-85W"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="DJN-SO-Ji2"/>
+                                            <constraint firstItem="kie-aT-J5P" firstAttribute="centerY" secondItem="WWC-o5-R9U" secondAttribute="centerY" id="Qqs-nd-baP"/>
+                                            <constraint firstItem="ERT-oO-Kav" firstAttribute="centerX" secondItem="WWC-o5-R9U" secondAttribute="centerX" id="iWz-O2-5EA"/>
+                                            <constraint firstAttribute="bottom" secondItem="ERT-oO-Kav" secondAttribute="bottom" id="l15-fp-zcD"/>
+                                            <constraint firstItem="kie-aT-J5P" firstAttribute="centerX" secondItem="WWC-o5-R9U" secondAttribute="centerX" id="wnp-xh-34j"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2va-fh-awh">
+                                        <rect key="frame" x="185.5" y="0.0" width="185.5" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audiobooks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6g-Em-rHT">
+                                                <rect key="frame" x="49" y="14.5" width="88" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="z6g-Em-rHT" firstAttribute="centerY" secondItem="2va-fh-awh" secondAttribute="centerY" id="Ohx-eD-VuE"/>
+                                            <constraint firstItem="z6g-Em-rHT" firstAttribute="centerX" secondItem="2va-fh-awh" secondAttribute="centerX" id="SZM-hL-1JE"/>
+                                            <constraint firstAttribute="height" constant="48" id="rki-vP-BUH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f80-E7-Eoy">
+                                <rect key="frame" x="0.0" y="48" width="371" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="baJ-3d-ftA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="20" right="0.0"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6va-Aj-K7h" secondAttribute="bottom" id="7ZT-yf-c3X"/>
+                    <constraint firstAttribute="trailing" secondItem="6va-Aj-K7h" secondAttribute="trailing" id="Mo7-Ey-9GI"/>
+                    <constraint firstItem="6va-Aj-K7h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ufa-82-2HP"/>
+                    <constraint firstItem="6va-Aj-K7h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rxM-fj-5vd"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="20" right="0.0"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewHighlightEbook" destination="ERT-oO-Kav" id="WLq-5U-A5u"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="91.071428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="colorPrimary">
+            <color red="0.23100000619888306" green="0.36100000143051147" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
