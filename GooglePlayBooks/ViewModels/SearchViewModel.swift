@@ -20,18 +20,26 @@ class SearchViewModel {
     
     var viewState: PassthroughSubject<SearchViewState, Never> = .init()
     
+    var testViewState: CurrentValueSubject<SearchViewState, Never> = .init(.failure)
+    
     private var bookList = [BookObject]()
     
     private var cancellable = Set<AnyCancellable>()
     
-    private let searchModel: SearchModel = SearchModelImpl.shared
+    private var searchModel: SearchModel = SearchModelImpl.shared
+    
+    init() {}
+    
+    init(searchModel: SearchModel) {
+        self.searchModel = searchModel
+    }
     
     
     func searchBooksByName(query: String) {
         searchModel.getBooksBySearch(query: query).sink { [weak self] data in
             guard let self = self else { return }
             self.bookList = data
-            debugPrint(self.bookList.count)
+            self.testViewState.send(.success)
             self.viewState.send(.success)
             
         }.store(in: &cancellable)

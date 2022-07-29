@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - Mocker (2.5.5)
   - Realm (10.28.1):
     - Realm/Headers (= 10.28.1)
   - Realm/Headers (10.28.1)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
+  - Mocker (~> 2.5.4)
   - RealmSwift (~> 10)
   - SDWebImage (~> 5.0)
   - UPCarouselFlowLayout
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Mocker
     - Realm
     - RealmSwift
     - SDWebImage
@@ -26,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Mocker: 8c731a8104962f246cadf2b02556218e9edc1390
   Realm: f4674e0e7ee537f67a78d79bd8319bc777d61d06
   RealmSwift: 0e0e4786685c4442bf56d3831dfefb5fa05d6fd6
   SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 85e18a4dfb6eb76505b10f8d7f3bddf8b301c3b4
+PODFILE CHECKSUM: ef0e3f5e930b06aaf96fcf20b88fae5b11efb55d
 
 COCOAPODS: 1.11.3

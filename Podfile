@@ -10,4 +10,12 @@ target 'GooglePlayBooks' do
   pod 'Alamofire', '~> 5.5'
   pod 'SDWebImage', '~> 5.0'
   pod 'RealmSwift', '~>10'
+  
+  
+  target 'GooglePlayBooksTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Mocker', '~> 2.5.4'
+  end
+
 end

@@ -13,8 +13,6 @@
 		454D546528806720007B533F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454D546428806720007B533F /* BaseModel.swift */; };
 		4577D1FF2879528400225E33 /* BookListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577D1FE2879528400225E33 /* BookListResponse.swift */; };
 		4577D2012879551800225E33 /* MoreBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577D2002879551800225E33 /* MoreBookResponse.swift */; };
-		4577D20E28796F0700225E33 /* YourBookMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577D20C28796F0700225E33 /* YourBookMoreInfoViewController.swift */; };
-		4577D20F28796F0700225E33 /* YourBookMoreInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4577D20D28796F0700225E33 /* YourBookMoreInfoViewController.xib */; };
 		4577D2132879C6E400225E33 /* AddToShelvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577D2112879C6E400225E33 /* AddToShelvesViewController.swift */; };
 		4577D2142879C6E400225E33 /* AddToShelvesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4577D2122879C6E400225E33 /* AddToShelvesViewController.xib */; };
 		4577D2182879C86600225E33 /* AddToShelfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577D2162879C86600225E33 /* AddToShelfTableViewCell.swift */; };
@@ -114,8 +112,33 @@
 		45E7679E2875D92500D8935D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7679D2875D92500D8935D /* Router.swift */; };
 		45E767A12875E17800D8935D /* ShelfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7679F2875E17800D8935D /* ShelfDetailViewController.swift */; };
 		45E767A22875E17800D8935D /* ShelfDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E767A02875E17800D8935D /* ShelfDetailViewController.xib */; };
+		45FA3F58289031AC00ED2D04 /* GooglePlayBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F57289031AC00ED2D04 /* GooglePlayBooksTests.swift */; };
+		45FA3F5F2890341200ED2D04 /* all_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FA3F5E2890341200ED2D04 /* all_list.json */; };
+		45FA3F62289034DD00ED2D04 /* list_by_list_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FA3F61289034DD00ED2D04 /* list_by_list_name.json */; };
+		45FA3F662890360E00ED2D04 /* search_books_by_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FA3F652890360E00ED2D04 /* search_books_by_name.json */; };
+		45FA3F68289180AE00ED2D04 /* MockBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F67289180AE00ED2D04 /* MockBookModel.swift */; };
+		45FA3F6B289181E600ED2D04 /* BookMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F6A289181E600ED2D04 /* BookMockData.swift */; };
+		45FA3F6D289182A800ED2D04 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F6C289182A800ED2D04 /* HomeViewModelTest.swift */; };
+		45FA3F6F2891945500ED2D04 /* MockSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F6E2891945500ED2D04 /* MockSearchModel.swift */; };
+		45FA3F712891965500ED2D04 /* SearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F702891965500ED2D04 /* SearchViewModelTest.swift */; };
+		45FA3F742891991400ED2D04 /* MockNetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F732891991400ED2D04 /* MockNetworkAgent.swift */; };
+		45FA3F7628919A9000ED2D04 /* NetworkClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F7528919A9000ED2D04 /* NetworkClientTest.swift */; };
+		45FA3F7828919F4800ED2D04 /* corrupt_response.html in Resources */ = {isa = PBXBuildFile; fileRef = 45FA3F7728919F4800ED2D04 /* corrupt_response.html */; };
+		45FA3F7A2892C57300ED2D04 /* MockShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F792892C57300ED2D04 /* MockShelfModel.swift */; };
+		45FA3F7C2892C7DD00ED2D04 /* LibraryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA3F7B2892C7DD00ED2D04 /* LibraryViewModelTest.swift */; };
 		689345E6F35DC20892E11EBC /* Pods_GooglePlayBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAAF52DFF71391452B09916 /* Pods_GooglePlayBooks.framework */; };
+		E7ADAA16E72D7497C5281363 /* Pods_GooglePlayBooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC989E96ED8F74B9670939E /* Pods_GooglePlayBooksTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45FA3F59289031AC00ED2D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45C3E2C42869FF0B0072EF37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C3E2CB2869FF0C0072EF37;
+			remoteInfo = GooglePlayBooks;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		454D545D28805960007B533F /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
@@ -124,8 +147,6 @@
 		454D546428806720007B533F /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		4577D1FE2879528400225E33 /* BookListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListResponse.swift; sourceTree = "<group>"; };
 		4577D2002879551800225E33 /* MoreBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreBookResponse.swift; sourceTree = "<group>"; };
-		4577D20C28796F0700225E33 /* YourBookMoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourBookMoreInfoViewController.swift; sourceTree = "<group>"; };
-		4577D20D28796F0700225E33 /* YourBookMoreInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourBookMoreInfoViewController.xib; sourceTree = "<group>"; };
 		4577D2112879C6E400225E33 /* AddToShelvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToShelvesViewController.swift; sourceTree = "<group>"; };
 		4577D2122879C6E400225E33 /* AddToShelvesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToShelvesViewController.xib; sourceTree = "<group>"; };
 		4577D2162879C86600225E33 /* AddToShelfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToShelfTableViewCell.swift; sourceTree = "<group>"; };
@@ -227,9 +248,27 @@
 		45E7679D2875D92500D8935D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		45E7679F2875E17800D8935D /* ShelfDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfDetailViewController.swift; sourceTree = "<group>"; };
 		45E767A02875E17800D8935D /* ShelfDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShelfDetailViewController.xib; sourceTree = "<group>"; };
+		45FA3F55289031AC00ED2D04 /* GooglePlayBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlayBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FA3F57289031AC00ED2D04 /* GooglePlayBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlayBooksTests.swift; sourceTree = "<group>"; };
+		45FA3F5E2890341200ED2D04 /* all_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all_list.json; sourceTree = "<group>"; };
+		45FA3F61289034DD00ED2D04 /* list_by_list_name.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = list_by_list_name.json; sourceTree = "<group>"; };
+		45FA3F652890360E00ED2D04 /* search_books_by_name.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_books_by_name.json; sourceTree = "<group>"; };
+		45FA3F67289180AE00ED2D04 /* MockBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookModel.swift; sourceTree = "<group>"; };
+		45FA3F6A289181E600ED2D04 /* BookMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMockData.swift; sourceTree = "<group>"; };
+		45FA3F6C289182A800ED2D04 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		45FA3F6E2891945500ED2D04 /* MockSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchModel.swift; sourceTree = "<group>"; };
+		45FA3F702891965500ED2D04 /* SearchViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTest.swift; sourceTree = "<group>"; };
+		45FA3F732891991400ED2D04 /* MockNetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkAgent.swift; sourceTree = "<group>"; };
+		45FA3F7528919A9000ED2D04 /* NetworkClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTest.swift; sourceTree = "<group>"; };
+		45FA3F7728919F4800ED2D04 /* corrupt_response.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = corrupt_response.html; sourceTree = "<group>"; };
+		45FA3F792892C57300ED2D04 /* MockShelfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShelfModel.swift; sourceTree = "<group>"; };
+		45FA3F7B2892C7DD00ED2D04 /* LibraryViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModelTest.swift; sourceTree = "<group>"; };
 		4AAAF52DFF71391452B09916 /* Pods_GooglePlayBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlayBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC989E96ED8F74B9670939E /* Pods_GooglePlayBooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlayBooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761FE7BD751DC41324150272 /* Pods-GooglePlayBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlayBooks.release.xcconfig"; path = "Target Support Files/Pods-GooglePlayBooks/Pods-GooglePlayBooks.release.xcconfig"; sourceTree = "<group>"; };
+		9C4D66BC64BBCAB481023447 /* Pods-GooglePlayBooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlayBooksTests.release.xcconfig"; path = "Target Support Files/Pods-GooglePlayBooksTests/Pods-GooglePlayBooksTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA4CEEF4EDE90E5F1B7CCFAE /* Pods-GooglePlayBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlayBooks.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlayBooks/Pods-GooglePlayBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		DCCC3EC058D691BE098A8E31 /* Pods-GooglePlayBooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlayBooksTests.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlayBooksTests/Pods-GooglePlayBooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +280,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45FA3F52289031AC00ED2D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7ADAA16E72D7497C5281363 /* Pods_GooglePlayBooksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -249,6 +296,8 @@
 			children = (
 				AA4CEEF4EDE90E5F1B7CCFAE /* Pods-GooglePlayBooks.debug.xcconfig */,
 				761FE7BD751DC41324150272 /* Pods-GooglePlayBooks.release.xcconfig */,
+				DCCC3EC058D691BE098A8E31 /* Pods-GooglePlayBooksTests.debug.xcconfig */,
+				9C4D66BC64BBCAB481023447 /* Pods-GooglePlayBooksTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -294,15 +343,6 @@
 				45C2C9192889873300F7CCD8 /* CommentListItem.swift */,
 			);
 			path = VOS;
-			sourceTree = "<group>";
-		};
-		4577D21028796F0C00225E33 /* YourBookMoreInfo */ = {
-			isa = PBXGroup;
-			children = (
-				4577D20C28796F0700225E33 /* YourBookMoreInfoViewController.swift */,
-				4577D20D28796F0700225E33 /* YourBookMoreInfoViewController.xib */,
-			);
-			path = YourBookMoreInfo;
 			sourceTree = "<group>";
 		};
 		4577D2152879C6EB00225E33 /* AddToShelves */ = {
@@ -488,6 +528,7 @@
 			isa = PBXGroup;
 			children = (
 				45C3E2CE2869FF0C0072EF37 /* GooglePlayBooks */,
+				45FA3F56289031AC00ED2D04 /* GooglePlayBooksTests */,
 				45C3E2CD2869FF0C0072EF37 /* Products */,
 				3D4B37C3AC25AF93D8B181B1 /* Pods */,
 				D09DEDB0597DB0D51613A485 /* Frameworks */,
@@ -498,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				45C3E2CC2869FF0C0072EF37 /* GooglePlayBooks.app */,
+				45FA3F55289031AC00ED2D04 /* GooglePlayBooksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -505,6 +547,7 @@
 		45C3E2CE2869FF0C0072EF37 /* GooglePlayBooks */ = {
 			isa = PBXGroup;
 			children = (
+				45AFE04D286DF8BA00D76205 /* Components */,
 				457C942D287F12F900BD0867 /* Networking */,
 				4577D1FC2879524A00225E33 /* Data */,
 				45C3E2E9286A11BC0072EF37 /* Utils */,
@@ -515,7 +558,6 @@
 				45C3E2E8286A11A80072EF37 /* Storyboards */,
 				45C3E2E7286A119C0072EF37 /* Resources */,
 				45C3E2DD2869FF100072EF37 /* Info.plist */,
-				45AFE04D286DF8BA00D76205 /* Components */,
 			);
 			path = GooglePlayBooks;
 			sourceTree = "<group>";
@@ -532,7 +574,6 @@
 				458C2AF4287484C900D68017 /* SortByBottomSheet */,
 				45E7679C2875D90900D8935D /* CreateShelf */,
 				45E767A32875E18300D8935D /* ShelfDetail */,
-				4577D21028796F0C00225E33 /* YourBookMoreInfo */,
 				4577D2152879C6EB00225E33 /* AddToShelves */,
 				4577D22E287B23C500225E33 /* ShelfMoreInfo */,
 				4577D233287B2AE300225E33 /* Search */,
@@ -754,10 +795,56 @@
 			path = ShelfDetail;
 			sourceTree = "<group>";
 		};
+		45FA3F56289031AC00ED2D04 /* GooglePlayBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				45FA3F722891986300ED2D04 /* ViewModels */,
+				45FA3F602890342800ED2D04 /* json */,
+				45FA3F69289180B700ED2D04 /* Model */,
+				45FA3F57289031AC00ED2D04 /* GooglePlayBooksTests.swift */,
+				45FA3F6A289181E600ED2D04 /* BookMockData.swift */,
+				45FA3F732891991400ED2D04 /* MockNetworkAgent.swift */,
+				45FA3F7528919A9000ED2D04 /* NetworkClientTest.swift */,
+			);
+			path = GooglePlayBooksTests;
+			sourceTree = "<group>";
+		};
+		45FA3F602890342800ED2D04 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				45FA3F5E2890341200ED2D04 /* all_list.json */,
+				45FA3F61289034DD00ED2D04 /* list_by_list_name.json */,
+				45FA3F652890360E00ED2D04 /* search_books_by_name.json */,
+				45FA3F7728919F4800ED2D04 /* corrupt_response.html */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		45FA3F69289180B700ED2D04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45FA3F67289180AE00ED2D04 /* MockBookModel.swift */,
+				45FA3F6E2891945500ED2D04 /* MockSearchModel.swift */,
+				45FA3F792892C57300ED2D04 /* MockShelfModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45FA3F722891986300ED2D04 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				45FA3F6C289182A800ED2D04 /* HomeViewModelTest.swift */,
+				45FA3F702891965500ED2D04 /* SearchViewModelTest.swift */,
+				45FA3F7B2892C7DD00ED2D04 /* LibraryViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D09DEDB0597DB0D51613A485 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4AAAF52DFF71391452B09916 /* Pods_GooglePlayBooks.framework */,
+				4DC989E96ED8F74B9670939E /* Pods_GooglePlayBooksTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -784,6 +871,26 @@
 			productReference = 45C3E2CC2869FF0C0072EF37 /* GooglePlayBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
+		45FA3F54289031AC00ED2D04 /* GooglePlayBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FA3F5D289031AC00ED2D04 /* Build configuration list for PBXNativeTarget "GooglePlayBooksTests" */;
+			buildPhases = (
+				85C52C164E8946160CADEF04 /* [CP] Check Pods Manifest.lock */,
+				45FA3F51289031AC00ED2D04 /* Sources */,
+				45FA3F52289031AC00ED2D04 /* Frameworks */,
+				45FA3F53289031AC00ED2D04 /* Resources */,
+				41558DDAC5D4DD631CA9C312 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FA3F5A289031AC00ED2D04 /* PBXTargetDependency */,
+			);
+			name = GooglePlayBooksTests;
+			productName = GooglePlayBooksTests;
+			productReference = 45FA3F55289031AC00ED2D04 /* GooglePlayBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -796,6 +903,10 @@
 				TargetAttributes = {
 					45C3E2CB2869FF0C0072EF37 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					45FA3F54289031AC00ED2D04 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 45C3E2CB2869FF0C0072EF37;
 					};
 				};
 			};
@@ -813,6 +924,7 @@
 			projectRoot = "";
 			targets = (
 				45C3E2CB2869FF0C0072EF37 /* GooglePlayBooks */,
+				45FA3F54289031AC00ED2D04 /* GooglePlayBooksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -848,10 +960,20 @@
 				45C3E302286B45570072EF37 /* CategorySelectionTableViewCell.xib in Resources */,
 				45C3E2D72869FF0C0072EF37 /* Main.storyboard in Resources */,
 				45C3E30F286B68590072EF37 /* RecentOpenCollectionViewCell.xib in Resources */,
-				4577D20F28796F0700225E33 /* YourBookMoreInfoViewController.xib in Resources */,
 				45C3E32F286DEA640072EF37 /* AboutBookTableViewCell.xib in Resources */,
 				45C3E307286B4FBC0072EF37 /* RecentListTableViewCell.xib in Resources */,
 				4577D2142879C6E400225E33 /* AddToShelvesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA3F53289031AC00ED2D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA3F5F2890341200ED2D04 /* all_list.json in Resources */,
+				45FA3F7828919F4800ED2D04 /* corrupt_response.html in Resources */,
+				45FA3F62289034DD00ED2D04 /* list_by_list_name.json in Resources */,
+				45FA3F662890360E00ED2D04 /* search_books_by_name.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +995,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlayBooks/Pods-GooglePlayBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41558DDAC5D4DD631CA9C312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlayBooksTests/Pods-GooglePlayBooksTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlayBooksTests/Pods-GooglePlayBooksTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlayBooksTests/Pods-GooglePlayBooksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C52C164E8946160CADEF04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlayBooksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE530EC8D906A47BE8FE62F0 /* [CP] Check Pods Manifest.lock */ = {
@@ -931,7 +1092,6 @@
 				45B31EE42884397300E9A1B2 /* RecentViewObject.swift in Sources */,
 				45AFE04C286DF8B600D76205 /* RatingControl.swift in Sources */,
 				4577D238287B300C00225E33 /* SearchResultTableViewCell.swift in Sources */,
-				4577D20E28796F0700225E33 /* YourBookMoreInfoViewController.swift in Sources */,
 				4577D1FF2879528400225E33 /* BookListResponse.swift in Sources */,
 				45C3E2D42869FF0C0072EF37 /* ViewController.swift in Sources */,
 				45C2C92C288BD63700F7CCD8 /* ShelfDetailMoreInfoViewModel.swift in Sources */,
@@ -984,7 +1144,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45FA3F51289031AC00ED2D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA3F742891991400ED2D04 /* MockNetworkAgent.swift in Sources */,
+				45FA3F712891965500ED2D04 /* SearchViewModelTest.swift in Sources */,
+				45FA3F68289180AE00ED2D04 /* MockBookModel.swift in Sources */,
+				45FA3F7628919A9000ED2D04 /* NetworkClientTest.swift in Sources */,
+				45FA3F58289031AC00ED2D04 /* GooglePlayBooksTests.swift in Sources */,
+				45FA3F7C2892C7DD00ED2D04 /* LibraryViewModelTest.swift in Sources */,
+				45FA3F7A2892C57300ED2D04 /* MockShelfModel.swift in Sources */,
+				45FA3F6F2891945500ED2D04 /* MockSearchModel.swift in Sources */,
+				45FA3F6B289181E600ED2D04 /* BookMockData.swift in Sources */,
+				45FA3F6D289182A800ED2D04 /* HomeViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45FA3F5A289031AC00ED2D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C3E2CB2869FF0C0072EF37 /* GooglePlayBooks */;
+			targetProxy = 45FA3F59289031AC00ED2D04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45C3E2D52869FF0C0072EF37 /* Main.storyboard */ = {
@@ -1178,6 +1363,46 @@
 			};
 			name = Release;
 		};
+		45FA3F5B289031AC00ED2D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCCC3EC058D691BE098A8E31 /* Pods-GooglePlayBooksTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H94W74W2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.corae.GooglePlayBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlayBooks.app/GooglePlayBooks";
+			};
+			name = Debug;
+		};
+		45FA3F5C289031AC00ED2D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4D66BC64BBCAB481023447 /* Pods-GooglePlayBooksTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H94W74W2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.corae.GooglePlayBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlayBooks.app/GooglePlayBooks";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1195,6 +1420,15 @@
 			buildConfigurations = (
 				45C3E2E12869FF100072EF37 /* Debug */,
 				45C3E2E22869FF100072EF37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA3F5D289031AC00ED2D04 /* Build configuration list for PBXNativeTarget "GooglePlayBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA3F5B289031AC00ED2D04 /* Debug */,
+				45FA3F5C289031AC00ED2D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

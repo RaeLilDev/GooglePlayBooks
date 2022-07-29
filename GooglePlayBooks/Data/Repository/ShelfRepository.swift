@@ -56,14 +56,8 @@ class ShelfRepositoryImpl: BaseRepository, ShelfRepository {
     
     func renameShelf(data: ShelfObject, shelfName: String) -> Bool {
         
-        let shelfs = realmInstance.db.objects(ShelfObject.self).filter("id = %@", data.id)
-
-        let realm = try! Realm()
-        
-        if let shelf = shelfs.first {
-            try! realm.write {
-                shelf.shelfName = shelfName
-            }
+        try! realmInstance.db.write {
+            data.shelfName = shelfName
         }
         
         return true
@@ -76,15 +70,23 @@ class ShelfRepositoryImpl: BaseRepository, ShelfRepository {
         
         let subject = CurrentValueSubject<ShelfObject, Never>(ShelfObject())
         
+        if let shelf = results.first {
+            subject.send(shelf)
+        }
+        
         shelfNotiToken = results.observe{ changes in
             
             switch changes {
-                
             case .initial(let vo):
-                subject.send(Array(vo).first ?? ShelfObject())
+                if let shelf = vo.first {
+                    subject.send(shelf)
+                }
+                
                 
             case .update(let vo, _, _, _):
-                subject.send(Array(vo).first ?? ShelfObject())
+                if let shelf = vo.first {
+                    subject.send(shelf)
+                }
                 
             case .error(_):
                 debugPrint("Error Called")
@@ -96,14 +98,18 @@ class ShelfRepositoryImpl: BaseRepository, ShelfRepository {
     }
     
     func getShelfList() -> AnyPublisher<[ShelfObject], Never> {
+        
         let results = realmInstance.db.objects(ShelfObject.self).sorted(byKeyPath: "shelfName", ascending: true)
         
         let subject = CurrentValueSubject<[ShelfObject], Never>([])
         
+        if results.count > 0 {
+            subject.send(Array(results))
+        }
+        
         shelfListNotiToken = results.observe{ changes in
             
             switch changes {
-                
             case .initial(let vo):
                 subject.send(Array(vo))
                 
@@ -114,10 +120,10 @@ class ShelfRepositoryImpl: BaseRepository, ShelfRepository {
                 debugPrint("Error Called")
             }
         }
-        
         return subject.eraseToAnyPublisher()
         
     }
+    
     
     func addBookToShelf(book: BookObject, shelf: ShelfObject) -> Bool {
         
@@ -170,12 +176,13 @@ class ShelfRepositoryImpl: BaseRepository, ShelfRepository {
     }
     
     func deleteShelf(shelf: ShelfObject) -> Bool {
-        let shelfResults = realmInstance.db.objects(ShelfObject.self)
-            .filter("id == %@", shelf.id)
+        
+        let books = realmInstance.db.objects(ShelfBookObject.self).filter("shelfId == %@", shelf.id)
+        
         do {
-
             try realmInstance.db.write {
-                    realmInstance.db.delete(shelfResults)
+                self.realmInstance.db.delete(books)
+                self.realmInstance.db.delete(shelf)
                     
                 }
             } catch let error as NSError {

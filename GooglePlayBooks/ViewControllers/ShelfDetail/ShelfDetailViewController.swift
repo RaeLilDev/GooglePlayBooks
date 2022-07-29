@@ -48,11 +48,13 @@ class ShelfDetailViewController: UIViewController {
         
         setupGestureRecognizer()
         
+        viewModel.getShelf()
+        
         listenShelfDetailViewState()
         
         sortingOrder = .recentlyOpened
         
-        viewModel.getShelf()
+        
         
         bindData()
     }
@@ -153,13 +155,20 @@ extension ShelfDetailViewController: UICollectionViewDataSource {
         case .list:
             let cell = collectionView.dequeueCell(identifier: YourBookListCollectionViewCell.identifier, indexPath: indexPath) as YourBookListCollectionViewCell
             cell.data = viewModel.getBookByIndex(index: indexPath.row)
+            cell.delegate = self
             return cell
             
         default:
             let cell = collectionView.dequeueCell(identifier: BookListCollectionViewCell.identifier, indexPath: indexPath) as BookListCollectionViewCell
             cell.data = viewModel.getBookByIndex(index: indexPath.row)
+            cell.delegate = self
             return cell
         }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigateToAboutThisBookViewController(book: viewModel.getBookByIndex(index: indexPath.row))
     }
     
 }
@@ -212,5 +221,34 @@ extension ShelfDetailViewController: OnTapShelfMoreInfoDelegate {
         self.viewModel.deleteShelf()
     }
     
+    
+}
+
+
+extension ShelfDetailViewController: OnTapBookMoreInfoDelegate {
+    func didTapBookMoreInfo(item: BookObject) {
+        let vc = BookMoreInfoViewController()
+        vc.delegate = self
+        vc.viewModel = BookMoreInfoViewModel(book: item)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
+    
+}
+
+
+extension ShelfDetailViewController: OnTapHomeBookItemDelegate {
+    func didTapAddToShelves(item: BookObject) {
+        self.navigateToAddToShelvesViewController(book: item)
+    }
+    
+    func didTapBookItem(item: BookObject) {
+        self.navigateToAboutThisBookViewController(book: item)
+    }
+    
+    func didTapViewMore(item: ListObject) {
+        //
+    }
     
 }

@@ -20,29 +20,39 @@ class HomeViewModel {
     
     var viewState: PassthroughSubject<HomeViewState, Never> = .init()
     
+    var testViewState: CurrentValueSubject<HomeViewState, Never> = .init(.failure)
+    
     private var items: [HomeViewControllerSectionType]  = [
         .RecentlyOpenedItems(items: []),
         .CategorySelection,
         .ItemList(items: [])
     ]
     
-    private let bookModel: BookModel = BookModelImpl.shared
+    
+    private var bookModel: BookModel = BookModelImpl.shared
     
     private var anyCancellable = Set<AnyCancellable>()
     
+    init() {}
+    
+    init(bookModel: BookModel) {
+        self.bookModel = bookModel
+    }
+    
     func getAllBooks() {
-        
         Publishers.CombineLatest(bookModel.getAllBookLists(), bookModel.getRecentList())
             .sink { [weak self] error in
                 guard let self = self else { return }
+                self.testViewState.send(.failure)
                 self.viewState.send(.failure)
             } receiveValue: { [weak self] (listData, recentData) in
                 guard let self = self else { return }
-                
+    
                 self.items[2] = .ItemList(items: listData)
                 self.items[0] = .RecentlyOpenedItems(items: recentData)
-
+                self.testViewState.send(.success)
                 self.viewState.send(.success)
+                
                 
             }.store(in: &anyCancellable)
 

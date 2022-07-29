@@ -49,6 +49,7 @@ class LibraryViewController: UIViewController {
     var isYourBooksSelected: Bool = true {
         didSet {
             if isYourBooksSelected {
+                containerYourShelves.isHidden = true
                 containerSelection.isHidden = false
                 collectionviewLibrary.isHidden = false
                 lblYourBooks.textColor = UIColor(named: "colorPrimary")
@@ -58,6 +59,7 @@ class LibraryViewController: UIViewController {
                 btnCreateNew.isHidden = true
                 collectionviewLibrary.reloadData()
             } else {
+                containerYourShelves.isHidden = viewModel.getShelvesCount() != 0
                 containerSelection.isHidden = true
                 lblYourShelves.textColor = UIColor(named: "colorPrimary")
                 overlayYourShelves.backgroundColor = UIColor(named: "colorPrimary")
@@ -88,6 +90,7 @@ class LibraryViewController: UIViewController {
         
         viewModel.fetchWishList(by: "date", order: false)
         
+        listenLibraryViewModelState()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +100,6 @@ class LibraryViewController: UIViewController {
         
         viewModel.fetchAllSheves()
         
-        listenLibraryViewModelState()
     }
     
     private func listenLibraryViewModelState() {
@@ -131,6 +133,7 @@ class LibraryViewController: UIViewController {
         guard let navigationBar = self.navigationController?.navigationBar else { return }
         
         navigationBar.addSubview(searchBarView)
+        searchBarView.delegate = self
         
         NSLayoutConstraint.activate([
             searchBarView.leftAnchor.constraint(equalTo: navigationBar.leftAnchor),
@@ -297,6 +300,14 @@ extension LibraryViewController: UICollectionViewDelegateFlowLayout {
         } else {
             self.navigateToShelfDetailViewController(shelf: viewModel.getShelfByIndex(index: indexPath.row))
         }
+    }
+}
+
+
+
+extension LibraryViewController: OnTapSearchBarDelegate {
+    func didTapSearchBar() {
+        self.navigateToSearchViewController()
     }
 }
 

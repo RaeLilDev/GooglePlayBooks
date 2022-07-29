@@ -52,6 +52,7 @@ class ShelfDetailViewModel {
     func getShelf() {
         shelfModel.getShelf(shelf: shelf).sink { data in
             self.shelf = data
+            debugPrint(self.shelf)
             self.viewState.send(.shelfUpdate)
         }.store(in: &cancellable)
     }

@@ -18,8 +18,6 @@ protocol BookModel {
     
     func getBookByList(listName: String, id: Int) -> AnyPublisher<[BookObject], Never>
     
-    func getBooksBySearch(query: String) -> AnyPublisher<[BookObject], Never>
-    
     func addToWishList(data: BookObject) -> Bool
     
     func isBookInWishList(data: BookObject) -> Bool
